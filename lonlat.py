@@ -1,18 +1,9 @@
-#import chardet
-#codelist=['utf-8','GB2312','gbk']
-#with open('/home/paigu/download/tude.xls') as t:
-#    text=t.readlines()
-#    code=chardet.detect(text)['encoding']
-#    if code in codelist:
-#        te.insert(END,text.decode(code))
-#    else:
-#        print(chardet.detect(text))
-#   
+  
 import pickle     
 import xlrd  
 import numpy as np
     #import chardet  
-data = xlrd.open_workbook("//home/paigu/download/tude.xls")  
+data = xlrd.open_workbook("tude.xls")  
 table = data.sheets()[0]  
 nrows = table.nrows  
 dict={}
